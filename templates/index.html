@@ -1,12 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask</title>
+<title>Python Flask Upload and Display Image</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 <body>
-    Hello
+<p><h1 align="center">Python Flask Upload and Display Image</h1></p>
+<div class="container">
+<div class="row">
+    <h2>Select a file to upload</h2>
+
+        <div>
+            <img src="{{ url_for('display_image', filename=filename) }}">
+        </div>
+        {% if text is defined %}
+            {% for line in text.splitlines() %}
+                {{line}}
+                <br>
+            {% endfor %}
+        {% endif %}
+    <form method="post" action="/" enctype="multipart/form-data">
+        <dl>
+            <p>
+                <input type="file" name="file" class="form-control" autocomplete="off" required>
+            </p>
+        </dl>
+        <p>
+            <input type="submit" value="Submit" class="btn btn-info">
+        </p>
+    </form>
+</div>
+</div>
 </body>
 </html>
