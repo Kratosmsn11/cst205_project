@@ -8,7 +8,8 @@
 # Rajarshi : Upload and Display Image 
 # Vighnesh: OCR Functionality
 # Hardik : HTML  Functionality
-# Resources : https://www.youtube.com/watch?v=ADV-AjAXHdc&t=1130s
+# Resources : 1) https://www.youtube.com/watch?v=ADV-AjAXHdc&t=1130s
+              2) https://www.youtube.com/watch?v=6WruncSoCdI
 
 # GitHub - https://github.com/Kratosmsn11/cst205_project.git
 # Trello - https://trello.com/invite/b/vB5YnYaL/673acf77c94c7872f63a2913ce1a74db/cst-205-team-7328
